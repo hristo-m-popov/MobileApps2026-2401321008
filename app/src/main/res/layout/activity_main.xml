@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAF8F3"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RecipeBox"
+        android:textColor="#315C42"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Your personal cookbook"
+        android:textColor="#777777"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#315C42"
+        android:hint="Search recipes..."
+        android:inputType="text"
+        android:padding="12dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Categories"
+        android:textColor="#26382B"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All" />
+
+            <Button
+                android:id="@+id/btnMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Main dishes" />
+
+            <Button
+                android:id="@+id/btnDesserts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desserts" />
+
+            <Button
+                android:id="@+id/btnSalads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salads" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="My recipes"
+        android:textColor="#26382B"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvEmptyState"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="No recipes yet.\nAdd your first recipe!"
+        android:textColor="#777777"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnAddRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:text="+ Add recipe"
+        android:textAllCaps="false" />
+
+</LinearLayout>
